@@ -5,9 +5,9 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const SCOPE = "marketplace";
+const CLIENT_ID = process.env.3m0citah728tgv2gapuvqefs98;
+const CLIENT_SECRET = process.env.1dbicnscqpmqpjvb5cl97j4ne1e6v7hh9achnjq3gibursfqpmi1;
+const SCOPE = "im-au-11/e74c6020-ee82-013e-a094-0a58a9feac03:c4631aa7-b3f2-4975-be6f-2d5a812e9896:3";
 
 /* Test route */
 app.get("/", (req, res) => {
@@ -24,9 +24,9 @@ app.post("/pay", async (req, res) => {
       "https://au-0000.sandbox.auth.assemblypay.com/tokens",
       new URLSearchParams({
         grant_type: "client_credentials",
-        client_id: CLIENT_ID,
-        client_secret: CLIENT_SECRET,
-        scope: SCOPE
+        client_id: 3m0citah728tgv2gapuvqefs98,
+        client_secret: 1dbicnscqpmqpjvb5cl97j4ne1e6v7hh9achnjq3gibursfqpmi1,
+        scope: im-au-11/e74c6020-ee82-013e-a094-0a58a9feac03:c4631aa7-b3f2-4975-be6f-2d5a812e9896:3
       }),
       { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
     );
